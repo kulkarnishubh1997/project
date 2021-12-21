@@ -5,3 +5,6 @@ from django.http import HttpResponse
 def sample(request):
     return HttpResponse("this is app2")
 
+def home(request):
+    return render(request,'app2_home.html')
+
